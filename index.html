@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Haptik JS SDK Custom Icon Demo</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width; initial-scale=1.0;" name="viewport">
+    <style>
+    
+    </style>
+  </head>
+  
+  <body style="background-image: url(bg.png) !important; background-size: cover !important;">
+  </body>
+  
+  <script type="text/javascript">
+  window.haptikInitSettings = {
+    "business-id": "1",
+    "client-id": "ce5e81e4080497eb82d42e4a539e323afd7bf200",
+    "base-url": "https://haptik-d11-preprod.hellohaptik.com/",
+    'custom-css': "override.css",
+    "enable-typing-suggestions": true,
+    "ignore-storage": true
+    // "privacy-policy-url": "URL_TO_YOUR_PRIVACY_POLICY_PAGE",
+  };
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js"></script>
+  <script>
+  // function openChat() {
+  //   HaptikSDK.show()
+  // }
+  document.addEventListener('haptik_sdk', function() {
+          // HaptikSDK is available now
+        HaptikSDK.launchMessage('start','TRUE', 'FALSE');
+                    HaptikSDK.show()
+  
+    });
+  </script>
+  </html>

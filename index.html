@@ -14,9 +14,9 @@
   
   <script type="text/javascript">
   window.haptikInitSettings = {
-    "business-id": "1",
-    "client-id": "ce5e81e4080497eb82d42e4a539e323afd7bf200",
-    "base-url": "https://haptik-d11-preprod.hellohaptik.com/",
+    "business-id": "3394",
+    "client-id": "85fdac75a0910dab3ae811481ffccd0bfde1ccf4",
+    "base-url": "https://staging.hellohaptik.com/",
     'custom-css': "override.css",
     "enable-typing-suggestions": true,
     "ignore-storage": true
@@ -25,17 +25,14 @@
   </script>
   <script type="text/javascript" charset="UTF-8" src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js"></script>
   <script>
-    
-    document.addEventListener('haptik_sdk', function() {setTimeout(myFunc, 100)
-          console.log("Listner Event is called")
-
-          function myFunc() {
-            console.log("Came inside Function");
-            HaptikSDK.launchMessage('start','TRUE', 'FALSE');
-                      HaptikSDK.show()
-          }
-          
-    
+  // function openChat() {
+  //   HaptikSDK.show()
+  // }
+  document.addEventListener('haptik_sdk', function() {
+          // HaptikSDK is available now
+        HaptikSDK.launchMessage('start','TRUE', 'FALSE');
+                    HaptikSDK.show()
+  
     });
   </script>
   </html>

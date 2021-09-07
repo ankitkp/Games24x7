@@ -10,13 +10,13 @@ body{
 
 /* background image */
 .message-section-area{
-  background-image: url(bg.png) !important;
+  /* background-image: url(bg.png) !important; */
   background-size: cover !important;
 }
 
 /* headers */
 .header-v2{
-  background-color: black !important;
+  background-color:#862b2b !important;
 }
 .header-v2-top-left-text{
   color: white !important;
@@ -24,24 +24,25 @@ body{
 /* hsl */
 .hsl-bubble-text{
   background-color: white !important;
-  border-bottom-right-radius: 4px !important;
-  border-top-right-radius: 16px !important;
-  border-top-left-radius: 16px !important;
-  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
   /* box-shadow: 0px 1px 2px #26000000 !important; */
   /* box-shadow: 0px 1px 2px 0px #26000015 !important; */
-  box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 15%) !important;
-  padding: 8px !important;
+  /* box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 15%) !important; */
+  padding: 18px 17px 18px 17px !important;
   border: 0px solid #e6e6e6 !important;
 }
 
 .message-section-message-row.from-business
 .hsl-bubble-text{
-  background-color: white !important;
-  border-bottom-left-radius: 4px !important;
-  border-top-right-radius: 16px !important;
-  border-top-left-radius: 16px !important;
-  border-bottom-right-radius: 16px !important;
+  background-color: #edd8d875 !important;
+  border: 1px solid #efb9b9 !important;
+  border-bottom-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
   font-family: Roboto-Regular !important;
 }
 
@@ -51,9 +52,9 @@ body{
 
 .from-user
 .hsl-bubble-text{
-  background-color: #0d802e !important;
-  color: white !important;
-  /* border: 1px solid #e6e6e6 !important; */
+  background-color: #e3dfdf61 !important;
+  color: black !important;
+  border: 1px solid #c4c2c280 !important;
   font-family: Roboto-Regular !important;
 }
 
@@ -76,7 +77,7 @@ body{
   justify-content: unset !important;
 }
 .quick-reply-option {
-  background-color: #4d4d4d !important;
+  background-color: #df3030 !important;
   border-radius: 4px !important;
   height: 36px !important;
   margin-bottom: 8px !important
@@ -90,13 +91,13 @@ body{
 .message-section-message-row.from-business .hsl.button::before,
 .message-section-message-row.from-business .hsl.carousel::before{
   content: "" !important;
-  background-size: 35px 35px !important;
-  background-image: url(Dream11.png) !important;
+  /* background-size: 35px 35px !important; */
+  background-image: url(games24x7smaller.png) !important;
   width: 36px !important;
   height: 30px !important;
   background-repeat: no-repeat !important;
   margin-bottom: 0rem !important;
-  border-radius: 50%;
+  border-radius: 35%;
   display: block !important;
 }
 
@@ -111,7 +112,7 @@ body{
   /* flex-wrap: unset !important;
   align-items: flex-end !important; */
   display: flex !important;
-  align-items: flex-end !important;
+  /* align-items: flex-end !important; */
 }
 
 /* text area at bottom */
@@ -157,11 +158,11 @@ body{
     --placeholder-color: #7d7d7d !important;
     --background-color: #f7f7f7 !important;
     background-color: #f7f7f7 !important;
-    height: 36px !important;
+    height: 42px !important;
     color: #424141 !important;
 
 
-    padding: 8px 8px 3px 8px !important;
+    padding: 10px 12px 3px 12px !important;
     transition: background-color 200ms linear !important;
     box-shadow: none !important;
 }
@@ -178,30 +179,30 @@ body{
 
 /* taskbox */
 .taskbox-new-tasks{
-  display: flex !important;
+  /* display: flex !important; */
   flex-wrap: wrap !important;
   padding: unset !important;
   margin-right: auto !important;
   margin-left: auto !important;
-  width: 95% !important;
+  width: 90% !important;
 }
 
 .taskbox-new-tasks .task-new.title{ 
-  --primary-color: white !important;
-  --primary-color-overlay: #4d4d4d !important;
-  background-color:#4d4d4d !important;
+  --primary-color: black !important;
+  --primary-color-overlay: #edd8d875 !important;
+  /* background-color:#4d4d4d !important; */
   /* margin: 8px 0px 0px 8px !important; */
-  margin: 8px 4px 0px 4px !important;
-  border-radius: 7px !important;
+  /* margin: 8px 4px 0px 4px !important; */
+  border-radius: 25px !important;
   height: 28px !important;
   /* box-shadow: 0px 2px 2px 0px #33000020; */
-  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%) !important;
-  padding: 6px 12px !important;
+  /* box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%) !important; */
+  padding: 10px 20px !important;
 }
 
-.task-new-icon{
+/* .task-new-icon{
   display: none !important;
-}
+} */
 
 .taskbox-new-body{
   overflow: hidden !important;
@@ -212,14 +213,21 @@ body{
 }
 
 .taskbox-new-CTA.active::before{
-  content: 'Choose from the topic below to begin chat';
-  font-family: Roboto-Regular !important;
-  font-size: 12px;
+  content: 'Menu';
+  /* font-family: Roboto-Regular !important; */
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
-  color: #797979;
-  padding: 13px 5px 0px 3px !important;
+  color: black;
+  padding: 13px 5px 0px 27px !important;
   
+}
+
+.task-new-icon.primary.default {
+  /* height: 20px;
+  display: flex;
+  align-items: center; */
+  width: 26px !important;
 }
 
 .taskbox-new-CTA, .taskbox-new-body, .taskbox-new-overlay{
@@ -242,16 +250,16 @@ span.taskbox-new-CTA-text.left{
   display: none;
 }
 
-.message-section-message-button-actionables {
+/* .message-section-message-button-actionables {
   padding: 8px !important;
-}
+} */
 
 .message-section-message-button-actionable{
   background-color: #4d4d4d !important;
   border-radius: 4px !important;
   /* padding: 6px 12px !important; */
   padding: 8.5px 12px !important;
-  height: 36px !important;
+  height: auto !important;
   font-size: 14px !important;
   font-family: Roboto-Regular !important;
 }
@@ -262,10 +270,14 @@ span.taskbox-new-CTA-text.left{
 }
 
 .hsl-button.message-section-message-button{
-  border-bottom-left-radius: 4px !important;
-  border-top-right-radius: 16px !important;
-  border-top-left-radius: 16px !important;
-  border-bottom-right-radius: 16px !important;
+  border-bottom-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: #edd8d875 !important;
+  border: 1px solid #efb9b9 !important;
+  padding: 18px 17px 18px 17px !important;
+  box-sizing: border-box !important;
 }
 
 .task-new.suggestion {
@@ -325,7 +337,7 @@ span.taskbox-new-CTA-text.left{
 .taskbox-new-CTA.active
 span.composer-icon.right::before {
   content: "" !important;
-  background-size: 34px 36px !important;
+  background-size: 30px 37px !important;
   background-image: url(menu2active.svg) !important;
   width: 32px !important;
   /* height: 34px !important; */
@@ -335,7 +347,7 @@ span.composer-icon.right::before {
 .taskbox-new-CTA
 span.composer-icon.right::before {
   content: "" !important;
-  background-size: 34px 36px !important;
+  background-size: 30px 37px !important;
   background-image: url(menu2notactive.svg) !important;
   width: 32px !important;
   height: 34px !important;
@@ -370,7 +382,7 @@ span.composer-icon.right::before {
 .composer-icon.disabled::before {
   content: "" !important;
   background-size: 34px 34px !important;
-  background-image: url(send_white.svg) !important;
+  background-image: url(send_red.svg) !important;
   width: 100% !important;
   height: 36px !important;
   background-repeat: no-repeat !important;
@@ -380,7 +392,7 @@ span.composer-icon.right::before {
 .composer-icon::before {
   content: "" !important;
   background-size: 33px 33px !important;
-  background-image: url(send_black.svg) !important;
+  background-image: url(send_red.svg) !important;
   width: 100% !important;
   height: 36px !important;
   background-repeat: no-repeat !important;
@@ -388,7 +400,7 @@ span.composer-icon.right::before {
 }
 
 .composer.v2 span.composer-icon{
-  width: 39px;
+  width: 41px;
 }
 
 .composer-icon svg{
@@ -410,19 +422,21 @@ span.composer-icon.right::before {
   font-family: Roboto !important;
 }
 .typing-indicator-loader{
-  visibility: hidden !important;
+  visibility: visible !important;
+  display: block !important;
 }
 
 .typing-indicator-loader .typing-loader-circle{
-  visibility: visible !important;
+  visibility: hidden !important;
+  display: none !important;
 }
 
 .typing-indicator{
   background-size: 15px 15px !important;
-  background: url(Dream11smaller1.png) no-repeat !important;
+  background: url(games24x7smaller.png) no-repeat !important;
   width: 15px !important;
   height: 30px !important;
-  min-width: 80px !important;
+  min-width: 100px !important;
 }
 
 /* Button Icon */
@@ -452,23 +466,23 @@ span.composer-icon.right::before {
 .quick-reply-stacked,
 .quick-reply-option-text.v2,
 .hsl-button-text.v2,
-.timeline-message-text.v2 {
+/* .timeline-message-text.v2 {
   font-family: Roboto-Regular !important;
-}
+} */
 
 
 .task-new-title {
-  font-family: Roboto-Regular !important;
+  /* font-family: Roboto-Regular !important; */
   font-weight: 100 !important;
 }
 
-.header-v2-top-left-text-title {
+/* .header-v2-top-left-text-title {
   visibility: hidden !important;
-}
+} */
 
-.header-v2-wrapper {
+/* .header-v2-wrapper {
   display: none !important;
-}
+} */
 
 
 @media screen and (max-height: 570px) {
@@ -504,4 +518,40 @@ span.composer-icon.right::before {
 
 iframe {
   border-radius: 16px !important;
+}
+
+
+.header-v2-top-left-text-title{
+  font-size: 17px !important  ;
+}
+
+.header-v2-top-left-image img {
+  width: 95% !important;
+  height: 100% !important;
+  min-width: 35px !important;
+  min-height: 35px !important;
+}
+
+.header-v2-top-left-image {
+  width: 36px !important;
+  height: 37px !important;
+  border-radius: 35px !important;
+}
+
+
+.typing-indicator-text {
+  /* display: inline-block;
+  margin: 0 5px; */
+  margin-left: 38px !important;
+  font-style: italic !important;
+  text-transform: lowercase !important;
+  color: #a19d9d !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+
+.typing-indicator-text::after {
+  content: "..." !important;
+  
 }
